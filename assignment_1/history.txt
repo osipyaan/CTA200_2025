@@ -1,0 +1,101 @@
+    1  ssh cosmo1
+    2  ls
+    3  ls -l
+    4  l s-la
+    5  ls -la
+    6  pwd
+    7  cd
+    8  pwd
+    9  df
+   10  df -l
+   11  exit
+   12  ls -la
+   13  cd
+   14  pwd
+   15  ls -l
+   16  ls
+   17  reset
+   18  stty sane
+   19  export TERM=xterm
+   20  ls
+   21  ls -la
+   22  exit
+   23  pwd
+   24  echo hello
+   25  /cita/local/bin/passwd
+   26  ssh shrimp
+   27  ls -la
+   28  cd /fs/lustre/scratch/eosipyan
+   29  cd /fs/lustre/scratch/osipyane
+   30  cd /fs/lustre/scratch/eosipyan@gw.cita.utoronto.ca
+   31  mkdir CTA200_2025
+   32  cd CTA200_2025
+   33  mkdir assignment_1
+   34  vi README.md
+   35  find /home/murray -name "Hello_world.c" -o -name "Hello_world.py"
+   36  ssh cosmo1
+   37  ssh cosmo2
+   38  ssh cosmo3
+   39  ssh cosmo4
+   40  ssh cosmo5
+   41  ssh cosmo6
+   42  cd /fs/lustre/scratch/eosipyan
+   43  cd /fs/lustre/scratch/osipyane
+   44  cd /fs/lustre/scratch/eosipyan@gw.cita.utoronto.ca
+   45  cd /fs/lustre/scratch/eosipyan
+   46  /cita/local/bin/passwd
+   47  passwd
+   48   ssh cosmo1
+   49  /cita/local/bin/passwd
+   50  cd /fs/lustre/scratch/eosipyan
+   51  echo hello
+   52  cd /fs/lustre/scratch/eosipyan
+   53  cd /fs/lustre/scratch/eosipyan
+   54  cd /fs/lustre/scratch/eosipyan
+   55  echo hello
+   56  cd /fs/lustre/scratch/eosipyan
+   57  cd /fs/lustre/scratch/eosipyan
+   58  whoami
+   59  cd /fs/lustre/scratch/eosipyan
+   60  mkdir CTA200_2025
+   61  cd CTA200_2025
+   62  mkdir assignment_1
+   63  echo "# CTA200 2025" > README.md
+   64  ls -l
+   65  ls -la
+   66  vi README.md
+   67  find /home/murray -name "Hello_world.c" -o -name "Hello_world.py"
+   68  cp /path/to/Hello_world.c assignment_1/
+   69  find /home/murray -name "Hello_world.c" -o -name "Hello_world.py"
+   70  find /home -name "Hello_world.c" -o -name "Hello_world.py"
+   71  find /home -iname "*hello_world*"
+   72  locate Hello_world.c
+   73  cd /fs/lustre/scratch/eosipyan/CTA200_2025/assignment_1
+   74  cat > Hello_world_osipyan.c << EOF
+#include <stdio.h>
+
+int main() {
+    printf("Hello, Elena Osipyan from C\n");
+    return 0;
+}
+EOF
+
+   75  cat > Hello_world_osipyan.py << EOF
+print("Hello, Elena Osipyan from Python")
+EOF
+
+   76  ls -la
+   77  module load gcc
+   78  gcc Hello_world_osipyan.c -o Hello_world.x
+   79  ls -la Hello_world.x
+   80  ./Hello_world.x
+   81  python Hello_world_osipyan.py
+   82  module load python
+   83  python Hello_world_osipyan.py
+   84  vi Hello_world_osipyan.c
+   85  gcc Hello_world_osipyan.c -o Hello_world.x
+   86  ./Hello_world.x > output_c.txt
+   87  python3 Hello_world_osipyan.py > output_python.txt
+   88  cat output_c.txt
+   89  cat output_python.txt
+   90  history > history.txt
